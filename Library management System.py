@@ -26,7 +26,7 @@ while True:
         fid=int(input("enter the id:"))
         name=input("enter the name:")
         author=input("enter the autor:")
-        cur.execute(f"INSERT INTO books(id,name,author) VALUES (?,?,?)",(fid,name,author))
+        cur.execute("INSERT INTO books(id,name,author) VALUES (?,?,?)",(fid,name,author))
         conn.commit()
       except:
          print("\nenter a number.\n")
@@ -34,7 +34,7 @@ while True:
       try:
         new_id=int(input("enter the id:"))
         cur.execute(
-         f"SELECT * FROM books WHERE id=={new_id};"
+         "SELECT * FROM books WHERE id=?",(new_id,)
         )
         rows=cur.fetchall()
         if not rows:
