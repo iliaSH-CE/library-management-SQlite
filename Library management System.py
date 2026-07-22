@@ -1,3 +1,17 @@
+"""
+Library Management System
+
+Features:
+- Add Book
+- Search Book
+- Show Books
+- Edit Book
+- Delete Book
+
+Language: Python
+Database: SQLite3
+"""
+
 import sqlite3
  
 conn=sqlite3.connect("C:\\Users\\Center\\Desktop\\library.db")
