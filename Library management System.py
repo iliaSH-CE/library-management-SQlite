@@ -20,7 +20,7 @@ cur=conn.cursor()
 
 while True:
    try:
-     choice=int(input("\nenter your operation:\n1.add\n2.Show\n3.Search\n4.Edit\n5.Delete\n6.exit\nselect:"))
+     choice=int(input("\nenter your operation:\n1.Add\n2.Show\n3.Search\n4.Edit\n5.Delete\n6.Exit\nSelect:"))
      if choice==1:
       try:
         h=int(input("enter the id:"))
